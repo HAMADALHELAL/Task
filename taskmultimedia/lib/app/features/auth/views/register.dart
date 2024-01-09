@@ -45,7 +45,9 @@ class RegisterScreen extends ConsumerWidget {
               height: context.screenHeight * 0.04,
             ),
             ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  authController.signInWithGoogle();
+                },
                 child: Text(
                   context.translate.googlesignin,
                   style: context.textTheme.bodyLarge?.copyWith(
